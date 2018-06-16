@@ -4,8 +4,28 @@
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+     <h1>Cifrado cesar</h1>
   </head>
   <body>
+    <div class="Cifrar" >
+    <span>Frase a cifrar</span>
+      <input type="text" id="entrada" value="" placeholder="Ingresa tu frase">
+      <br>
+      <br>
+    <span>Offset</span>
+    <input type="number" min="0" max="1000" id="offset" value="" placeholder="Ingresa tu desplazamiento"></p>
+      <button id="button">Cifrar</button>
+      <p id="cifrado"></p>
+</div>
+<div class="descifrar">
+      <span>Descifrando</span>
+      <input type="text" id="entrada2" value="" placeholder="Ingresa tu frase">
+        <br>
+        <br>
+      <button id="button2">Descifrar</button>
+      <p id="descifrado"></p>
+
+</div>
     <div id="root"></div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
