@@ -8,11 +8,11 @@ let buttonDecode=document.getElementById("button2");
 
 
 buttonEncode.addEventListener("click", () => {
-document.getElementById("cifrado").innerHTML = window.cipher.encode( string.value, parseInt(offset.value));
+document.getElementById("resultado").innerHTML = window.cipher.encode( string.value, parseInt(offset.value));
 }
 ),
 
 buttonDecode.addEventListener("click", () => {
-  document.getElementById("descifrado").innerHTML = window.cipher.decode( string2.value, parseInt(offset.value));
+  document.getElementById("resultado").innerHTML = window.cipher.decode( string2.value, parseInt(offset.value));
 }
 )

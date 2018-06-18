@@ -1,8 +1,10 @@
 window.cipher = {
 
   encode:(string, offset) => { // FUNCION CIFRAR
-    let resultado ="";
-  //  es para que concatene toda la frase y se muestre en DOM
+    let resultado =""; //  es para que concatene toda la frase y se muestre en DOM
+
+
+
     for (i=0; i<string.length; i++){// inicializa en 0 el recorrido de la frase
       let cadenas = string.charCodeAt(i);//convierte las letras de la frase en posicion ascii
       if(cadenas >= 65 && cadenas <= 90){// para mayusculas ascii
@@ -20,6 +22,8 @@ window.cipher = {
 
   decode :(string2, offset) => { // FUNCION DESCIFRAR
     let resultado=" ";
+
+
     for (i = 0; i < string2.length; i++){// inicializa en 0 el recorrido de la frase
       let cadenas = string2.charCodeAt(i);//convierte las letras de la frase en posicion ascii
       if(cadenas >= 65 && cadenas <= 90){// para mayusculas ascii
