@@ -4,29 +4,64 @@
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
-     <h1>Cifrado cesar</h1>
+    <h1 class="lines-effect" >Tu mensaje es un secreto</h1>
+
   </head>
   <body>
-    <div class="Cifrar" >
-    <span>Frase a cifrar</span>
-      <input type="text" id="entrada" value="" placeholder="Ingresa tu frase">
-      <br>
-      <br>
-    <span>Offset</span>
-    <input type="number" min="0" max="1000" id="offset" value="" placeholder="Ingresa tu desplazamiento"></p>
-      <button id="button">Cifrar</button>
+    <section class="contenido">
 
-</div>
-<div class="descifrar">
-      <span>Descifrando</span>
-      <input type="text" id="entrada2" value="" placeholder="Ingresa tu frase">
+
+    <div id="Empieza" class="inicio">
+      <div class="header">
+        <div class="content">
+          <img class="imagen" src="shh.png" ></img>
+          <h2>Quieres que nadie se entere de tus planes? Aqui te guardamos el secreto</h2>
+          <href="shh.png"/>
+          <button id="buttonStart" class="boton">Enterate como!!</button>
+        </div>
+       </div>
+     </div>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+
+
+    <div id="container" class="container">
+
+      <div class="Cifrar" >
+        <h3 class="mensaje">Escribenos el mensaje secreto y nos encargaremos de que sea todo un misterio</h3>
+        <span id="men">Mensaje</span>
+        <input type="text" id="entrada" value="" placeholder="Ingresa tu frase">
+        <br>
+        <h4>Ahora ingresa una clave para que sea mas dificil revelar tu secreto</h4>
+        <span id="off">Offset</span>
+        <input type="number" min="0" max="1000" id="offset" value="" placeholder="Ingresa tu desplazamiento"></p>
+        <button id="button">Cifrar</button>
+      </div>
+    </div>
+
+    <div id="container2" class="container2">
+      <div class="descifrar">
+        <h5>Ya te dimos el mensaje misterioso, ingresalo aqui para revelar tu secreto</h5>
+        <span id="men2">Descifrando</span>
+        <input type="text" id="entrada2" value="" placeholder="Ingresa tu frase">
         <br>
         <br>
-      <button id="button2">Descifrar</button>
+        <button id="button2">Descifrar</button>
+
+
+    </div>
+    </div>
+    <div class="containerResultado" style="background-image: url('marmol.png'); width: 50; height: 100; ">
+      <h6>****Aqui esta tu mensaje****</h6>
       <p id="resultado"></p>
+    </div>
 
 
-</div>
+</section>
+
     <div id="root"></div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>

@@ -1,6 +1,6 @@
 window.cipher = {
 
-  encode:(string, offset) => { // FUNCION CIFRAR
+  encode:(offset, string) => { // FUNCION CIFRAR
     let resultado =""; //  es para que concatene toda la frase y se muestre en DOM
 
 
@@ -20,7 +20,7 @@ window.cipher = {
   },
 
 
-  decode :(string2, offset) => { // FUNCION DESCIFRAR
+  decode :(offset, string2) => { // FUNCION DESCIFRAR
     let resultado=" ";
 
 
@@ -37,3 +37,7 @@ window.cipher = {
       return resultado;
     }
   };
+
+  start:() => {
+
+}
