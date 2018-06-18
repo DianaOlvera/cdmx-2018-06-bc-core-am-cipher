@@ -5,7 +5,7 @@ window.cipher = {
 
 
 
-    for (i=0; i<string.length; i++){// inicializa en 0 el recorrido de la frase
+    for (let i=0; i<string.length; i++){// inicializa en 0 el recorrido de la frase
       let cadenas = string.charCodeAt(i);//convierte las letras de la frase en posicion ascii
       if(cadenas >= 65 && cadenas <= 90){// para mayusculas ascii
         resultado += String.fromCharCode((cadenas -65 + offset) % 26 + 65); //se convierte las posiciones en letras
@@ -21,10 +21,10 @@ window.cipher = {
 
 
   decode :(offset, string2) => { // FUNCION DESCIFRAR
-    let resultado=" ";
+    let resultado="";
 
 
-    for (i = 0; i < string2.length; i++){// inicializa en 0 el recorrido de la frase
+    for (let i = 0; i < string2.length; i++){// inicializa en 0 el recorrido de la frase
       let cadenas = string2.charCodeAt(i);//convierte las letras de la frase en posicion ascii
       if(cadenas >= 65 && cadenas <= 90){// para mayusculas ascii
         resultado += String.fromCharCode((cadenas -90 - offset) %26 + 90);// se convierte las posiciones en letras
